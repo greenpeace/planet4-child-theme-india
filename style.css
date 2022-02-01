@@ -13,3 +13,189 @@ Text Domain: planet4-child-theme
 */
 
 @import 'css/typography.css';
+
+@media (max-width: 576px) {
+	.happy-point-block-wrap .pt-20 iframe {
+    height: 420px;
+  }
+}
+
+/* blockquote */
+blockquote {
+	font-family: Georgia, serif;
+	font-size: 16px;
+	font-style: italic;
+	width: 100%;
+	margin: 2.25em 0;
+	padding: 0.25em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: #383838;
+	border-left:3px dashed #c1c1c1;
+	background:#eee;
+}
+
+blockquote > p {
+  font-size: 1.5rem;
+}
+
+blockquote cite {
+	color: #999999;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+/* timeline css */
+.timelinecontainer {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item p {
+  font-size: 1rem;
+}
+
+.timeline-img {
+  width: 50%;
+	height: auto;
+}
+
+.timeline-item:hover {
+	-moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  background-color: lightyellow;
+
+}
+
+.year {
+  position: absolute;
+  left: 0.7em;
+  font-weight: bold;
+  top: 0em;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.timeline-item::after {
+  width: 30px;
+  height: 30px;
+  display: block;
+  top: 1.5em;
+  position: absolute;
+  left: -16px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+.timeline-item:last-child {
+  -o-border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+  border-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, transparent) 1 100%;
+}
+
+/* FAQ */
+.showfaq {
+  background: #ddd;
+  padding:1em;
+	margin:2em;
+}
+
+.showfaqdetails {
+  display: none;
+  background: #aaa;
+  padding: 2em;
+}
+
+.showfaq:hover .showfaqdetails {
+ display: block;
+}
+
+/* PDF download */
+.pdfdownload {
+  margin: 20px;
+}
+
+.pdfdownload ul {
+  list-style-type: none;
+  width: 500px;
+}
+
+.pdfdownload li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.pdfdownload li {
+  padding: 10px;
+  overflow: auto;
+}
+
+.pdfdownload li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+/* pdf link */
+ul.no_bullet {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li.pdfdownload {
+  background: url('https://storage.googleapis.com/stateless-india-p4-greenpeace/india/wp-content/uploads/2018/05/pdfdownload-e1527589008432.png') no-repeat left top;
+  height: 54px;
+  padding-left: 56px;
+  padding-top: 0px;
+}
+
+.wpml-ls-current-language{
+	display: none;
+}
+
+.four-column-content .four-column-content-wrap .four-column-content-symbol {
+  max-width: 255px;
+  height: 50%;
+}
+
+a.btn.btn-donate {
+  color: #FFFFFF;
+  background-color: #F36D3A;
+}
+
+.en__field--1089742 .en__field__element,
+.en__field--1089744 .en__field__element,
+.en__field--1089745 .en__field__element,
+.en__field--1089746 .en__field__element {
+  flex-direction: column-reverse !important;
+}
+
+.en__field--1089742 label,
+.en__field--1089744 label,
+.en__field--1089745 label,
+.en__field--1089746 label {
+  display: contents;
+  font-size: large !important;
+}
+
+.enform form input{
+  margin: 1rem 0 1rem 0 !important;
+}
